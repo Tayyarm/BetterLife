@@ -139,12 +139,12 @@ const HomePage = () => {
 
   const [habits, setHabits] = useState({
     good: [
-      { id: 1, name: 'Daily Exercise', streak: 0, completed: false, lastCompletedDate: null },
-      { id: 2, name: 'Read 30 mins', streak: 0, completed: false, lastCompletedDate: null },
+      { id: 1, name: "Daily Exercise", streak: 0, completed: false, lastCompletedDate: null },
+      { id: 2, name: "Read 30 mins", streak: 0, completed: false, lastCompletedDate: null },
     ],
     bad: [
-      { id: 3, name: 'Smoking', streak: 0, avoided: false, lastCompletedDate: null },
-      { id: 4, name: 'Late Night Snacking', streak: 0, avoided: false, lastCompletedDate: null },
+      { id: 3, name: "Smoking", streak: 0, avoided: false, lastCompletedDate: null },
+      { id: 4, name: "Late Night Snacking", streak: 0, avoided: false, lastCompletedDate: null },
     ]
   });
 
@@ -454,8 +454,8 @@ const HomePage = () => {
           overflow: 'hidden',
           bgcolor: 'background.default',
         }}
-      >
-        <AppBar 
+        >
+          <AppBar 
           position="fixed" 
           elevation={0}
           sx={{
@@ -544,7 +544,7 @@ const HomePage = () => {
                 <CardContent>
                   <Typography variant="h6" sx={{ mb: 3, display: 'flex', alignItems: 'center' }}>
                     <TrophyIcon sx={{ mr: 1, color: theme.palette.primary.main }} />
-                    Today's Progress
+                    {"Today's Progress"}
                   </Typography>
                   
                   <Box sx={{ mb: 4 }}>
@@ -887,7 +887,7 @@ const HomePage = () => {
             }}
           >
             <Cancel sx={{ fontSize: 20 }} />
-            Remove Today's Entry
+            {"Remove Today's Entry"}
           </MenuItem>
           <MenuItem 
             onClick={handleDeleteHabit}
