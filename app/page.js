@@ -477,7 +477,7 @@ const HomePage = () => {
                   fontWeight: 'bold'
                 }}
               >
-                Habit Tracker
+                Better Life
               </Typography>
               <Box sx={{ display: 'flex', gap: 1 }}>
                 <ProgressRing value={Math.round((goodProgress + badProgress) / 2)} />
